@@ -1,22 +1,23 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+
 .App {
   text-align: center;
+  font-family: "Pacifico", cursive;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#add {
   color: white;
 }
+#new-task {
+  padding: 20px;
 
-.App-link {
-  color: #09d3ac;
+  margin-bottom: 20px;
+  border: 1px solid #007bff;
+
+  color: #007bff;
+}
+::placeholder {
+  color: #007bff;
+}
+.task-comp {
+  text-decoration: line-through;
 }
