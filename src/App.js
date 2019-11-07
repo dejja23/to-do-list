@@ -26,8 +26,12 @@ class App extends Component {
     this.setState({ iscompleted: arr });
   };
   removeHandler = index => {
-    let arr = [...this.state.tasklist];
-    this.setState({ tasklist: arr.filter((e, i) => i !== index) });
+    let arr1 = [...this.state.tasklist];
+    let arr2 = [...this.state.iscompleted];
+    this.setState({
+      tasklist: arr1.filter((e, i) => i !== index),
+      iscompleted: arr2.filter((e, i) => i !== index)
+    });
   };
 
   render() {
